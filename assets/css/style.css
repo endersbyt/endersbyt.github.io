@@ -4,6 +4,11 @@ body {
 	padding: 0;
 	margin: 0;
 	display: block;
+	/* To stop acidental highlighting of photos*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 img {
@@ -301,6 +306,7 @@ div.pic {
 	float: left;
 	width: 100%;
 	margin-bottom: -5px;
+	cursor: pointer;
 }
 
 @media (min-width: 700px) and (min-device-width:700px) {
@@ -322,6 +328,37 @@ div.pic {
 	div.pic {
 		width: 25%;
 	}
+}
+
+#Fullscreen {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 21;
+	background-image: url("../assets/images/people/IMG_0888.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#dimBackground {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.6;
+	-moz-opacity: 0.60;
+	filter: alpha(opacity=60);
+	z-index: 20;
+	height: 100%;
+	width: 100%;
+	background-repeat: repeat;
 }
 
 
@@ -427,32 +464,72 @@ div.pic {
 }
 
 #contactinfo a:hover {
-	color: black;
+	color: lightcoral;
 }
 
 
-/*RESOURCES*/
+/*RESOURCES AND GEAR*/
 
 #reswrapper {
 	margin: auto;
-	padding-left: 5%;
-	padding-right: 5%;
 	max-width: 1000px;
 }
 
-#reswrapper p {
+#reswrapper p,
+#gearwrapper p {
 	text-indent: 3em;
 }
 
-#reswrapper h2 {
+#reswrapper h2,
+#gearwrapper h2 {
 	text-align: center;
 }
 
-#reswrapper a {
+#reswrapper a,
+#gearwrapper a {
 	text-decoration: none;
 	color: inherit;
 }
 
-#reswrapper a:hover {
+#reswrapper a:hover,
+#gearwrapper a:hover {
 	text-decoration: underline;
+}
+
+
+/*GEAR*/
+
+#gearwrapper {
+	margin: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	max-width: 800px;
+	display: block;
+}
+
+hr {
+	clear: both;
+	margin: 5px;
+}
+
+#gearwrapper h3 {
+	text-align: left;
+	font-family: 'Muli', sans-serif;
+	font-weight: lighter;
+	font-size: 15pt;
+	color: dimgray;
+	margin: 0;
+	padding: 0;
+}
+
+.equipment {
+	clear: both;
+	width: 100%;
+	height: 100%;
+}
+
+.equipment img {
+	float: right;
+	max-height: 200px;
+	width: auto;
 }

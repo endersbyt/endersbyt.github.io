@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" id="test">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
 	<title>Tim People Photography</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> </head>
 
@@ -21,49 +22,43 @@
 			<li><a href="../video.html">VIDEO</a></li>
 			<li class="dropdown"> <a href="../about.html">ABOUT ME</a>
 				<div class="dropdown-content"> <a href="../about/gear.html">GEAR</a>
-					<br/> <a href="../about/resume.html">RESUME</a> <a href="../about/references.html">REFERENCES</a> </div>
+					<br/> <a href="../about/resume.html">RESUME</a> <a href="../about/resources.html">RESOURCES</a> </div>
 			</li>
 		</ul>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_0062.jpg"> <img src="../assets/images/people/IMG_0062.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_0059.jpg"> <img src="../assets/images/people/IMG_0059.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_0065.jpg"> <img src="../assets/images/people/IMG_0065.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_0055.jpg"> <img src="../assets/images/people/IMG_0055.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_0866.jpg"> <img src="../assets/images/people/IMG_0866.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_0888.jpg"> <img src="../assets/images/people/IMG_0888.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_1830.jpg"> <img src="../assets/images/people/IMG_1830.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_7108-2-2-Edit.jpg"> <img src="../assets/images/people/IMG_7108-2-2-Edit.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_9657.jpg"> <img src="../assets/images/people/IMG_9657.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_9984-2-Edit.jpg"> <img src="../assets/images/people/IMG_9984-2-Edit.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_2369.jpg"> <img src="../assets/images/people/IMG_2369.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/people/IMG_0893.jpg"> <img src="../assets/images/people/IMG_0893.jpg" alt="image"> </a>
-		</div>
+		<div class="pic"> <img src="../assets/images/people/IMG_0062.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_0888.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_0059.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_0866.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_1830.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_7108-2-2-Edit.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_0055.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_9657.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_0065.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_9984-2-Edit.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_2369.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/people/IMG_0893.jpg" alt=""> </div>
+		<div id="Fullscreen"> </div>
+		<div id="dimBackground"></div>
 	</div>
 	<div style="clear:both;">
 		<footer> COPYRIGHT © 2016, TIMOTHY ENDERSBY </footer>
 	</div>
+	<script>
+		//Display fullscreen div with selected image full screen
+		$('.pic img').click(function () {
+			$('#Fullscreen').css('height', $(window).height());
+			$('#Fullscreen').css('width', $(window).width());
+			var src = $(this).attr('src');
+			$('#Fullscreen').css('background-image', 'url(' + src + ')');
+			$('#Fullscreen').fadeIn();
+			$('#dimBackground').fadeIn();
+		});
+		//Hide when clicked again
+		$('#Fullscreen').click(function () {
+			$(this).fadeOut();
+			$('#dimBackground').fadeOut();
+		});
+	</script>
 </body>
 
 </html>

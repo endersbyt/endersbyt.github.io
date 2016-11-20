@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" id="test">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
 	<title>Tim Places Photography</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> </head>
 
@@ -21,68 +22,49 @@
 			<li><a href="../video.html">VIDEO</a></li>
 			<li class="dropdown"> <a href="../about.html">ABOUT ME</a>
 				<div class="dropdown-content"> <a href="../about/gear.html">GEAR</a>
-					<br/> <a href="../about/resume.html">RESUME</a>
-<a href="../about/references.html">REFERENCES</a> </div>
+					<br/> <a href="../about/resume.html">RESUME</a> <a href="../about/resources.html">RESOURCES</a> </div>
 			</li>
 		</ul>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_0855.jpg"> <img src="../assets/images/places/IMG_0855.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_0965.jpg"> <img src="../assets/images/places/IMG_0965.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_1555.jpg"> <img src="../assets/images/places/IMG_1555.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_2393.jpg"> <img src="../assets/images/places/IMG_2393.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/PaigeHandwritten.jpg"> <img src="../assets/images/places/PaigeHandwritten.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_2450.jpg"> <img src="../assets/images/places/IMG_2450.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_3142-Edit.jpg"> <img src="../assets/images/places/IMG_3142-Edit.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_4420.jpg"> <img src="../assets/images/places/IMG_4420.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_6878-2.jpg"> <img src="../assets/images/places/IMG_6878-2.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_7118-2.jpg"> <img src="../assets/images/places/IMG_7118-2.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_8781-Edit.jpg"> <img src="../assets/images/places/IMG_8781-Edit.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_9125.jpg"> <img src="../assets/images/places/IMG_9125.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_9339-Edit.jpg"> <img src="../assets/images/places/IMG_9339-Edit.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_9538.jpg"> <img src="../assets/images/places/IMG_9538.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_9752-HDR.jpg"> <img src="../assets/images/places/IMG_9752-HDR.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/star_trail.jpg"> <img src="../assets/images/places/star_trail.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_0673.jpg"> <img src="../assets/images/places/IMG_0673.jpg" alt="image"> </a>
-		</div>
-		<div class="pic">
-			<a href="../assets/images/places/IMG_0547.jpg"> <img src="../assets/images/places/IMG_0547.jpg" alt="image"> </a>
-		</div>
+		<div class="pic"> <img src="../assets/images/places/IMG_0855.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_0965.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_1555.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_2393.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/PaigeHandwritten.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_2450.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_3142-Edit.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_4420.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_6878-2.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_7118-2.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_8781-Edit.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_9125.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_9339-Edit.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_9538.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_9752-HDR.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/star_trail.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_0673.jpg" alt=""> </div>
+		<div class="pic"> <img src="../assets/images/places/IMG_0547.jpg" alt=""> </div>
+		<div id="Fullscreen"> </div>
+		<div id="dimBackground"></div>
 	</div>
 	<div style="clear:both;">
 		<footer> COPYRIGHT © 2016, TIMOTHY ENDERSBY </footer>
 	</div>
+	<script>
+		//Display fullscreen div with selected image full screen
+		$('.pic img').click(function () {
+			$('#Fullscreen').css('height', $(window).height());
+			$('#Fullscreen').css('width', $(window).width());
+			var src = $(this).attr('src');
+			$('#Fullscreen').css('background-image', 'url(' + src + ')');
+			$('#Fullscreen').fadeIn();
+			$('#dimBackground').fadeIn();
+		});
+		//Hide when clicked again
+		$('#Fullscreen').click(function () {
+			$(this).fadeOut();
+			$('#dimBackground').fadeOut();
+		});
+	</script>
 </body>
 
 </html>
