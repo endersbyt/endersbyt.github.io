@@ -16,9 +16,16 @@ img {
 }
 
 a {
+	color: inherit;
 	text-decoration: none;
-	margin: 0;
-	padding: 0;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+
+a:hover {
+	color: lightcoral;
 }
 
 h2 {
@@ -37,6 +44,11 @@ p {
 	margin: 6px;
 }
 
+html,
+body {
+	height: 100%;
+}
+
 
 /*FOOTER*/
 
@@ -51,9 +63,8 @@ footer {
 	height: 1.5em;
 }
 
-html,
-body {
-	height: 100%;
+footer a {
+	margin-left: 5em;
 }
 
 .wrapper {
@@ -189,15 +200,9 @@ li.dropdown {
 	}
 }
 
-@media (min-device-width: 700px) and (min-width: 700px) {
-	/*No dropdown on mobile and small screen*/
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
+.dropdown:hover .dropdown-content {
+	display: block;
 }
-
-
-/*HOME PAGE*/
 
 
 /*HEADER*/
@@ -446,25 +451,6 @@ div.pic {
 	#tim {
 		max-width: none;
 	}
-}
-
-#contactinfo {
-	padding-top: 20px;
-	text-align: center;
-	padding-bottom: 40px;
-}
-
-#contactinfo a {
-	color: inherit;
-	text-decoration: none;
-	-webkit-transition: color .5s;
-	-moz-transition: color .5s;
-	-o-transition: color .5s;
-	transition: color .5s;
-}
-
-#contactinfo a:hover {
-	color: lightcoral;
 }
 
 
