@@ -53,14 +53,16 @@ body {
 /*FOOTER*/
 
 footer {
+	clear: both;
 	display: block;
 	width: 100%;
 	font-family: 'Muli', sans-serif;
 	font-weight: lighter;
 	text-align: center;
 	color: grey;
-	padding-top: 1px;
-	height: 1.5em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	height: 1.4em;
 }
 
 footer a {
@@ -74,7 +76,7 @@ footer a {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	margin-bottom: -2em;
+	margin-bottom: -1.8em;
 }
 
 
