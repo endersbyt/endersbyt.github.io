@@ -50,6 +50,26 @@ body {
 }
 
 
+/*HEADER*/
+
+#header {
+	float: left;
+	width: 50%;
+	display: block;
+}
+
+#header h1 {
+	font-family: 'Muli', sans-serif;
+	font-weight: lighter;
+	text-align: center;
+	font-size: 45pt;
+	color: dimgray;
+	padding-top: 20px;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+
 /*FOOTER*/
 
 footer {
@@ -79,24 +99,14 @@ footer a {
 	margin-bottom: -1.8em;
 }
 
-
-/*HEADER*/
-
-#header {
-	float: left;
-	width: 50%;
-	display: block;
-}
-
-#header h1 {
-	font-family: 'Muli', sans-serif;
-	font-weight: lighter;
-	text-align: center;
-	font-size: 45pt;
-	color: dimgray;
-	padding-top: 20px;
-	margin: 0;
-	padding-bottom: 20px;
+@media (max-device-width: 700px) {
+	/*Make it more readable on mobile*/
+	footer {
+		font-size: 200%;
+	}
+	footer a {
+		margin-left: 0;
+	}
 }
 
 
@@ -189,6 +199,7 @@ li.dropdown {
 	/*For mobile*/
 	#header h1 {
 		font-size: 55pt;
+		padding-top: 30px;
 	}
 	#navlist {
 		font-size: 250%;
