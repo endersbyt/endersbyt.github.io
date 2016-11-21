@@ -419,13 +419,11 @@ div.pic {
 
 #videopageframe {
 	margin: auto;
-	width: 650px;
 }
 
 .video {
 	padding: 5px;
 	text-align: center;
-	width: 640px;
 	margin: auto;
 }
 
@@ -435,21 +433,51 @@ div.pic {
 	padding-bottom: 50px;
 }
 
+.videoframe {
+	width: 640px;
+	height: 360px;
+}
+
 @media (min-width: 1300px) and (min-device-width: 1300px) {
 	#videopageframe {
-		width: 1300px;
+		width: 1400px;
 	}
 	.videowrapper {
 		width: 50%;
 	}
 }
 
-@media (max-device-width: 600px) {
+@media (max-device-width: 700px) {
+	/*Make videos bigger on small mobile devices*/
 	.video h2 {
 		font-size: 30pt;
 	}
 	.video p {
 		font-size: 150%;
+	}
+	.videoframe {
+		width: 95%;
+		height: 56vw;
+	}
+	#videopageframe {
+		width: 100%;
+	}
+	.video {
+		width: 100%;
+	}
+}
+
+@media (max-width: 660px) {
+	/*Make videos fit into small screens*/
+	.videoframe {
+		width: 95%;
+		height: 56vw;
+	}
+	#videopageframe {
+		width: 100%;
+	}
+	.video {
+		width: 100%;
 	}
 }
 
