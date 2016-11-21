@@ -80,7 +80,7 @@ footer {
 	font-weight: lighter;
 	text-align: center;
 	color: grey;
-	padding-top: .2em;
+	padding-top: .3em;
 	padding-bottom: .2em;
 	height: 1.4em;
 }
@@ -96,7 +96,7 @@ footer a {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	margin-bottom: -1.8em;
+	margin-bottom: -2em;
 }
 
 @media (max-device-width: 700px) {
@@ -361,6 +361,9 @@ div.pic {
 		width: 25%;
 	}
 }
+
+
+/*Javascript divs*/
 
 #Fullscreen {
 	display: none;
