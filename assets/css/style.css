@@ -415,6 +415,17 @@ div.pic {
 }
 
 
+/*
+@media (max-device-width: 700px) {
+	#Fullscreen,
+	#dimBackgorund {
+		z-index: 0;
+	}
+}
+
+*/
+
+
 /*VIDEO PAGE*/
 
 #videopageframe {
