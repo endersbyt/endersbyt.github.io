@@ -1,6 +1,11 @@
 /*GENERAL CSS*/
 
+html {
+	height: 100%;
+}
+
 body {
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	display: block;
@@ -42,11 +47,6 @@ p {
 	color: dimgray;
 	padding: 0;
 	margin: 6px;
-}
-
-html,
-body {
-	height: 100%;
 }
 
 
@@ -234,18 +234,36 @@ li.dropdown {
 
 /*HEADER*/
 
-#homepage #navlist a {
+.homepage #navlist a {
 	color: white;
 }
 
-#homepage #navlist {
+.homepage #navlist {
 	font-weight: bolder;
 }
 
-#homepage #header h1 {
+.homepage #header h1 {
 	color: white;
 	vertical-align: center;
 	font-weight: bolder;
+}
+
+@media (max-device-width: 700px) {
+	/*For mobile*/
+	.homepage #header h1 {
+		font-size: 55pt;
+		padding-top: 30px;
+	}
+	.homepage #navlist {
+		font-size: 350%;
+		margin: 0;
+		padding-bottom: 40px;
+	}
+	.homepage #navlist li {
+		width: 100%;
+		padding-top: 5px;
+		margin: 1px;
+	}
 }
 
 
@@ -284,9 +302,9 @@ li.dropdown {
 }
 
 @media (max-width: 700px) {
-	/*Replace video with image in small screens*/
+	/*Replace video with gif in small screens*/
 	.fullscreen-bg {
-		background: url('../images/places/IMG_0855.jpg') center center / cover no-repeat;
+		background: url('../videos/WebsiteHome.gif') center center / cover no-repeat;
 	}
 	.fullscreen-bg__video {
 		display: none;
@@ -294,9 +312,9 @@ li.dropdown {
 }
 
 @media (max-device-width: 700px) {
-	/*Replace video with image mobile*/
+	/*Replace video with gif mobile*/
 	.fullscreen-bg {
-		background: url('../images/places/IMG_0855.jpg') center center / cover no-repeat;
+		background: url('../videos/WebsiteHome.gif') center center / cover no-repeat;
 	}
 	.fullscreen-bg__video {
 		display: none;
@@ -430,6 +448,7 @@ div.pic {
 /*ABOUT ME*/
 
 .aboutwrapper {
+	width: 100%;
 	max-width: 1200px;
 	margin: auto;
 	display: block;
@@ -455,13 +474,15 @@ div.pic {
 	float: right;
 	width: 50%;
 	max-width: 475px;
-	margin-right: 20px;
+	margin-left: 20px;
 	padding-top: 40px;
 }
 
 @media (max-width: 1023px) {
 	/*One center column if window too small*/
 	#about {
+		padding-left: 20px;
+		padding-right: 20px;
 		padding-top: 20px;
 		padding-bottom: 20px;
 		width: 100%;
