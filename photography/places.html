@@ -4,7 +4,6 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Tim Places Photography</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> </head>
 
@@ -42,29 +41,8 @@
 		<div id="dimBackground"></div>
 	</div>
 	<footer> COPYRIGHT © 2016, TIMOTHY ENDERSBY <a href="mailto:tim@timendersby.com?Subject=Website%20contact">tim@timendersby.com</a></footer>
-	<script>
-		//Check if it's mobile - don't display fullscreen on mobile
-		$(document).ready(function () {
-			var isMobile = window.matchMedia("min-device-width: 760px");
-			if (isMobile.matches) {
-				//Conditional script here
-				//Display fullscreen div with selected image full screen when clicked
-				$('.pic img').click(function () {
-					$('#Fullscreen').css('height', $(window).height());
-					$('#Fullscreen').css('width', $(window).width());
-					var src = $(this).attr('src');
-					$('#Fullscreen').css('background-image', 'url(' + src + ')');
-					$('#Fullscreen').fadeIn("fast");
-					$('#dimBackground').fadeIn("fast");
-				});
-				//Hide when clicked again
-				$('#Fullscreen').click(function () {
-					$(this).fadeOut("fast");
-					$('#dimBackground').fadeOut("fast");
-				});
-			}
-		});
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../assets/fullscreen_photos.js"></script>
 </body>
 
 </html>
