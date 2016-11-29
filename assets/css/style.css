@@ -337,7 +337,7 @@ div.pic {
 	/*1 photo per row (mobile and small scree)*/
 	float: left;
 	width: 100%;
-	margin-bottom: -5px;
+	margin-bottom: -6px;
 	cursor: pointer;
 }
 
