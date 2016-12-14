@@ -6,13 +6,18 @@ if (!isMobile) {
 		$('#Fullscreen').css('height', $(window).height());
 		$('#Fullscreen').css('width', $(window).width());
 		var src = $(this).attr('src');
-		$('#Fullscreen').css('background-image', 'url(' + src + ')');
+		setToImage(src);
+		//$('#Fullscreen').css('background-image', 'url(' + src + ')');
 		$('#Fullscreen').fadeIn();
 		$('#dimBackground').fadeIn();
 	});
 	//Hide when clicked again
 	$('#Fullscreen').click(function () {
-		$(this).fadeOut();
-		$('#dimBackground').fadeOut();
+		closeOut();
 	});
+}
+
+function closeOut() {
+	$('#Fullscreen').fadeOut();
+	$('#dimBackground').fadeOut();
 }
